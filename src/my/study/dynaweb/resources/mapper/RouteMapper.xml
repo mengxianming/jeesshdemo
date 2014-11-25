@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="my.study.dynaweb.entity.Route" table="tb_route">
+		<id name="id" type="long" column="id" unsaved-value="null">
+			<generator class="increment">
+			</generator>
+		</id>
+		<property name="createTime" column="create_time"/>
+		<property name="contentType" column="content_type"/>
+		<property name="content" column="content"/>
+
+	</class>
+</hibernate-mapping>
